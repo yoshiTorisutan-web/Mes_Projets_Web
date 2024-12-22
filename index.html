@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tristan Bossard - Mes projets web</title>
+    <link rel="icon" type="image/svg+xml" href="assets/rocket.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <button class="back-button" onclick="goBack()">← Retour</button>
+        <h1>Mes projets web</h1>
+        <p>
+          Découvrez mes mini-projets et sites web interactifs réalisés avec
+          différents langages - HTML, CSS, JS, React, Tailwind, Angular, Python,
+          etc.
+        </p>
+        <div style="position: relative; display: inline-block">
+          <i
+            class="fas fa-search"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translateY(-50%);
+              color: #aaa;
+            "
+          ></i>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Rechercher un projet..."
+            oninput="filterProjects()"
+            style="padding-left: 30px; width: 100%"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects" class="projects">
+        <article class="project-card" data-title="Plant Manager">
+          <img src="assets/Plant_manager.png" alt="Plant Manager" />
+          <div class="project-info">
+            <h2>Plant Manager</h2>
+            <p>
+              Le Gestionnaire de Plantes d'Intérieur 🌿 est une application
+              permettant de suivre les arrosages 💧, ajouter des plantes 🌱, et
+              recevoir des notifications 🔔.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://plantmanagers.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Plant_manager"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Smash or Pass">
+          <img src="assets/smash_or_pass.png" alt="Smash or Pass" />
+          <div class="project-info">
+            <h2>Smash or Pass</h2>
+            <p>
+              "Smash or Pass - Meme Edition" est un jeu en ligne où les joueurs
+              évaluent des memes en cliquant sur "Smash" 👍 ou "Pass" 🚫.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://smashorpassgame.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Smash_or_Pass"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Memory Game">
+          <img src="assets/memory_game.png" alt="Memory Game" />
+          <div class="project-info">
+            <h2>Memory Game - Edition Emoji</h2>
+            <p>
+              Le Memory Game 🃏 est un jeu de mémoire où il faut associer des
+              paires de cartes identiques.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://memorygamemoji.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Memory_Game"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Personal Sign">
+          <img src="assets/personal_sign.png" alt="Personal Sign" />
+          <div class="project-info">
+            <h2>Personal Sign</h2>
+            <p>
+              Une app web pour créer une signature ✍️ avec la souris, ajuster
+              couleur 🎨 et épaisseur ✏️, et sauvegarder en PNG 📸.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://personalsign.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Personal_sign"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Captcha Generator">
+          <img src="assets/captcha.png" alt="Captcha Generator" />
+          <div class="project-info">
+            <h2>Captcha Generator</h2>
+            <p>
+              Ce projet génère un CAPTCHA 🔐 pour sécuriser les formulaires et
+              vérifier que l'utilisateur est humain 🤖❌.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://captchasgenerator.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Captcha_generator"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Word Scramble">
+          <img src="assets/word_scramble.png" alt="Word Scramble" />
+          <div class="project-info">
+            <h2>Word Scramble</h2>
+            <p>
+              Word Scramble 🧩 est un jeu où il faut déchiffrer un mot mélangé
+              pour retrouver le mot original.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://wordscrambles.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Word_Scramble"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Password Generator">
+          <img src="assets/password_generator.png" alt="Password Generator" />
+          <div class="project-info">
+            <h2>Password Generator</h2>
+            <p>
+              Ce projet est un générateur de mots de passe 🔑 pour créer des
+              mots de passe solides et personnalisables.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://mdpgenerator.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Password_Generator"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Hangman Game">
+          <img src="assets/hangman.png" alt="Hangman Game" />
+          <div class="project-info">
+            <h2>Hangman Game</h2>
+            <p>
+              Le jeu du Hangman ⚖️ consiste à deviner un mot en proposant des
+              lettres, avant que le bonhomme ne pende ⛓️.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://hangames.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Hangman_game"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Pokédex">
+          <img src="assets/pokédex.png" alt="Pokédex" />
+          <div class="project-info">
+            <h2>Pokédex</h2>
+            <p>
+              Pokédex est une app web pour rechercher et explorer des infos sur
+              les Pokémon 🐾.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://pocodex.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Pokedex"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Tower Blocks">
+          <img src="assets/tower_blocks.png" alt="Tower Blocks" />
+          <div class="project-info">
+            <h2>Tower Blocks</h2>
+            <p>
+              Un jeu addictif où il faut construire la plus haute tour en
+              empilant des blocs 🏗️ !
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://towersblock.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Tower_Blocks"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="To Do List">
+          <img src="assets/to_do_list.png" alt="To Do List" />
+          <div class="project-info">
+            <h2>To Do List</h2>
+            <p>
+              Vous aider à gérer vos tâches : créer des listes, ajouter des
+              tâches, marquer comme terminées et supprimer quand c'est fait.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://listask.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/To-Do-List"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-title="Microsoft Landing Page">
+          <img src="assets/microsoft.png" alt="Microsoft Landing Page" />
+          <div class="project-info">
+            <h2>Microsoft Landing Page</h2>
+            <p>
+              Une reproduction de la page d'accueil de Microsoft 🖥️ en HTML, CSS
+              et JS, axée sur le responsive et l'interactivité, pour améliorer
+              les compétences en développement web.
+            </p>
+            <div class="buttons-container">
+              <a
+                class="presentation-web"
+                href="https://mslp.netlify.app/"
+                target="_blank"
+                >Voir le projet</a
+              >
+              <a
+                class="presentation-code"
+                href="https://github.com/yoshiTorisutan-web/Microsoft_landing_page"
+                target="_blank"
+                >Voir le code</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Tristan Bossard. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+
+  <div id="popup" class="popup hidden">
+    <p>Bienvenue sur la page de mes projets ! 🚀</p>
+    <p>
+      De nouveaux projets arriveront mensuellement, donc n'hésitez pas à
+      découvrir mes nouvelles créations ✨.
+    </p>
+  </div>
+</html>
