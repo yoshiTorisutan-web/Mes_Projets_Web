@@ -1,8 +1,4 @@
 // Filter projects based on search input
-function goBack() {
-  window.history.back(); // Retourne à la page précédente
-}
-
 function filterProjects() {
   const searchValue = document.getElementById("search-bar").value.toLowerCase();
   const projectCards = document.querySelectorAll(".project-card");
