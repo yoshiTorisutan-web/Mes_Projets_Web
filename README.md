@@ -1,6 +1,6 @@
 <h1 align="center">Mes projets web</h1>
 <div align="center">
-  <img src="images/rocket.png" alt="Logo" width="80" height="80">
+  <img src="assets/rocket.png" alt="Logo" width="80" height="80">
 </div>
 
 Bienvenue sur ma plateforme de projets web ! Ce projet est une plateforme regroupant tous les projets web que j'ai réalisés au cours de mon parcours. Chaque projet est développé avec une variété de langages et de technologies, allant de HTML, CSS, JavaScript à des frameworks comme React, ainsi que des outils de gestion de projet et des API.
