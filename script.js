@@ -27,5 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000); // 5000ms = 5 secondes
 });
 
+// Récupère l'année actuelle
+const currentYear = new Date().getFullYear();
+
+// Insère l'année dans l'élément <span id="year">
+document.getElementById("year").textContent = currentYear;
+
 // Log interaction for analytics or debugging
 console.log("Welcome to the modern Project Hub!");
