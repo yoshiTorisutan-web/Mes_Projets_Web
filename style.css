@@ -1,6 +1,8 @@
+/* Styles globaux */
 @font-face {
   font-family: "Beckman";
-  src: url("./fonts/Beckman-FREE.otf") format("otf");
+  src: url("./fonts/Beckman-FREE.otf") format("otf"),
+    url("./fonts/Beckman-FREE.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,10 +14,11 @@
 }
 
 body {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  background: #f8f9fa;
-  color: #333333;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa; /* Couleur de fond légère */
+  color: #333333; /* Texte principal */
 }
 
 body::-webkit-scrollbar {
@@ -59,6 +62,10 @@ header h1 {
   font-size: 2.5rem;
   font-family: "Beckman", sans-serif;
   font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 40px; /* Un peu d'espace sous le titre */
 }
 
 header p {
@@ -250,26 +257,54 @@ main {
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: rgba(28, 103, 88, 1);
+  padding: 2rem;
+  background: rgba(28, 103, 88, 1); /* Couleur foncée du dégradé */
   color: white;
   font-size: 0.9rem;
+  margin-top: auto;
 }
 
+/* Centre les éléments du header en mode mobile */
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .back-button {
+    display: none; /* Cache le bouton de retour */
+  }
+
+  h1 {
+    margin-bottom: 10px; /* Un peu d'espace sous le titre */
+  }
+
+  p {
+    margin-bottom: 20px; /* Un peu d'espace sous la description */
+  }
+
+  #search-bar {
+    width: 80%; /* Ajuste la largeur de la barre de recherche */
+  }
+
+  .fa-search {
+    left: 15px; /* Décale légèrement l'icône dans la barre de recherche */
+  }
+}
+
+/* Masque le bouton de retour sur mobile */
 @media (max-width: 768px) {
   .back-button {
     display: none;
   }
+}
 
+/* Masque la popup sur mobile */
+@media (max-width: 768px) {
   #popup {
     display: none;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .category-title {
-    font-size: 1.5rem;
   }
 }
