@@ -13,25 +13,26 @@ function filterProjects() {
   });
 }
 
+// Attach event listener to search bar
+document.getElementById("search-bar").addEventListener("input", filterProjects);
+
+// Popup functionality
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById("popup");
 
-  // Afficher la popup
+  // Show popup
   popup.classList.remove("hidden");
   popup.classList.add("visible");
 
-  // La cacher après 5 secondes
+  // Hide after 5 seconds
   setTimeout(() => {
     popup.classList.remove("visible");
     popup.classList.add("hidden");
-  }, 5000); // 5000ms = 5 secondes
+  }, 5000);
 });
 
-// Récupère l'année actuelle
+// Set current year in footer
 const currentYear = new Date().getFullYear();
-
-// Insère l'année dans l'élément <span id="year">
 document.getElementById("year").textContent = currentYear;
 
-// Log interaction for analytics or debugging
 console.log("Welcome to the modern Project Hub!");
