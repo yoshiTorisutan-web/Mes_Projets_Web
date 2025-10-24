@@ -374,3 +374,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+.header-container:has(#search-bar:focus) .fa-search {
+  display: none;
+}
