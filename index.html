@@ -27,12 +27,23 @@
           différents langages -
           <em>HTML, CSS, JS, React, Tailwind, Angular, Python, etc.</em>
         </p>
-        <div class="search-wrapper">
-          <i class="fas fa-search"></i>
+        <div style="position: relative; display: inline-block">
+          <i
+            class="fas fa-search"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translateY(-50%);
+              color: #aaa;
+            "
+          ></i>
           <input
             type="text"
             id="search-bar"
             placeholder="Rechercher un projet..."
+            oninput="filterProjects()"
+            style="padding-left: 40px; width: 100%"
           />
         </div>
       </div>

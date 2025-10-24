@@ -279,7 +279,7 @@ footer {
   }
 
   h1 {
-    margin-bottom: 10px; /* Un peu d'espace sous le titre */
+    margin-bottom: 30px; /* Un peu d'espace sous le titre */
   }
 
   p {
@@ -306,5 +306,71 @@ footer {
 @media (max-width: 768px) {
   #popup {
     display: none;
+  }
+}
+
+/* Container principal */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* Barre de recherche */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-color: #aaa;
+}
+
+/* Icône */
+.search-bar i {
+  color: #888;
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+/* Input */
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color: #333;
+}
+
+/* Placeholder */
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+/* 🔹 Responsive mobile */
+@media (max-width: 600px) {
+  .search-bar {
+    max-width: 90%;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .search-bar i {
+    font-size: 1rem;
+    margin-right: 0.6rem;
+  }
+
+  .search-bar input {
+    font-size: 0.9rem;
   }
 }
